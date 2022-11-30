@@ -58,6 +58,9 @@ export default function subjects(){
           </a>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <p>Full Stack MiniProject</p>
+      </footer>
     </div>
     );
 }
