@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../styles/page.module.css'
+import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
 import vet from '../images/vet.png'
 import nurse from '../images/nurse.png'
@@ -12,9 +12,9 @@ export default function jobs(){
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
       <div className={styles.main}>
-      <li>
-          <Link href='/'>Home</Link>
-        </li>
+      <div className={styles.button}>
+            <Link href='/'>Home</Link>
+        </div>
         <h3>Click on the Job to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>
@@ -58,6 +58,9 @@ export default function jobs(){
           </a>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <p>Full Stack MiniProject</p>
+      </footer>
     </div>
     );
 }

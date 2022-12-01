@@ -4,11 +4,8 @@ import panda from '../images/panda.webp'
 import tiger from '../images/tiger.webp'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/page.module.css'
+import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
-import Popup from '../layout/popup/Popup'
-import { useState } from 'react'
-
 
 function animals(){
 
@@ -16,9 +13,9 @@ function animals(){
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
       <div className={styles.main}>
-        <li>
-          <Link href='/'>Home</Link>
-        </li>
+        <div className={styles.button}>
+            <Link href='/'>Home</Link>
+        </div>
         <h3>Click on the Animal to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>
@@ -30,7 +27,6 @@ function animals(){
               width={400}
               height={400}
               />
-              <button onClickHandler={() => togglePopup()}>Click Here</button>
           </a>
 
           <a className={styles.card}>
@@ -64,6 +60,9 @@ function animals(){
           </a>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <p>Full Stack MiniProject</p>
+      </footer>
     </div>
     );
 }
