@@ -1,4 +1,4 @@
-import styles from '../styles/page.module.css'
+import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
 import Image from 'next/image'
 import lorry from '../images/lorry.png'
@@ -12,9 +12,9 @@ export default function vehicles(){
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
       <div className={styles.main}>
-      <li>
-          <Link href='/'>Home</Link>
-        </li>
+      <div className={styles.button}>
+            <Link href='/'>Home</Link>
+        </div>
         <h3>Click on the Vehicle to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>

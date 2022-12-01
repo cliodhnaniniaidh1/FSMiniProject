@@ -4,7 +4,7 @@ import english from '../images/english.png'
 import science from '../images/science.png'
 import histroy from '../images/history.png'
 import Link from 'next/link'
-import styles from '../styles/page.module.css'
+import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
 
 export default function subjects(){
@@ -12,9 +12,9 @@ export default function subjects(){
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
       <div className={styles.main}>
-      <li>
-          <Link href='/'>Home</Link>
-        </li>
+      <div className={styles.button}>
+            <Link href='/'>Home</Link>
+        </div>
         <h3>Click on the Subject to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>
