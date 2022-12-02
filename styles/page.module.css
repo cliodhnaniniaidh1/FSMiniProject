@@ -1,5 +1,9 @@
 .container {
     padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   
   .header{
@@ -21,6 +25,7 @@
   }
   
   .footer {
+    margin-top: auto;
     display: flex;
     padding: 2px;
     border-top: 1px solid #eaeaea;
@@ -49,7 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
   }
   
   .card {
