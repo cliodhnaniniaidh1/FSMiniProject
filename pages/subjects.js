@@ -12,9 +12,6 @@ export default function subjects(){
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
       <div className={styles.main}>
-      <div className={styles.button}>
-            <Link href='/'>Home</Link>
-        </div>
         <h3>Click on the Subject to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>
@@ -56,6 +53,9 @@ export default function subjects(){
               height={400}
               />
           </a>
+        </div>
+        <div className={styles.button}>
+            <Link href='/'>Home</Link>
         </div>
       </div>
       <footer className={styles.footer}>
