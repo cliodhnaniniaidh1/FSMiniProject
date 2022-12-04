@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
+import Popup from '../layout/popup/Popup'
+import { useState } from 'react'
 
 function animals(){
 
@@ -23,6 +25,7 @@ function animals(){
               width={400}
               height={400}
               />
+               <Popup />
           </a>
 
           <a className={styles.card}>
@@ -33,6 +36,7 @@ function animals(){
               width={400}
               height={400}
               />
+               <Popup />
           </a>
 
           <a className={styles.card}>
@@ -43,6 +47,7 @@ function animals(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -53,6 +58,7 @@ function animals(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
         </div>
         <div className={styles.button}>

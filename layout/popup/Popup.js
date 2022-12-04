@@ -1,24 +1,29 @@
-import classes from "./Popup.module.css"
+import styles from "./Popup.module.css"
 import { useState } from 'react'
 
 
 export default function Popup(props) {
-  let [showMe, setShowMe] = useState()
 
-  if(props.show) { /* Move the show / hide code to the component itself: */
-    return null
+  const [show, setShow] = useState(false)
+
+function close() {
+  if (show == true) {
+    setShow(false);
+  } else {
+    setShow(true);
   }
-
-  if(showMe) { /* Move the show / hide code to the component itself: */
-    return null
-  }
-
-  return (
-    <div className={classes.mainDiv} onClick={() => setShowMe(true)} >
-      <div className={classes.greyBackground}></div>
-      <div className={classes.thePopup}>
-      </div>
-    </div>
-  )
 }
-
+    return (
+      <div className={styles.button}>
+        <p onClick={() => close(true)}>Click Here!</p>
+        {show && (
+          <div className={styles.mainDiv} >
+            <div className={styles.greyBackground}></div>
+            <div className={styles.thePopup}>
+              <div className={styles.button} onClick={() => close(false)}>Close</div>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+}

@@ -7,14 +7,15 @@ import teacher from '../images/teacher.png'
 import guard from '../images/guard.png'
 import Link from 'next/link'
 import React from 'react';
+import Popup from '../layout/popup/Popup';
 
 export default function jobs(){
 
-  const [likes, setLikes] = React.useState(0);
+  // const [likes, setLikes] = React.useState(0);
 
-  function handleClick(){
-    setLikes(likes + 1);
-  }
+  // function handleClick(){
+  //   setLikes(likes + 1);
+  // }
   return (
     <div className={styles.container}>
       <HeaderComponent></HeaderComponent>
@@ -22,7 +23,7 @@ export default function jobs(){
         <h3>Click on the Job to learn more!</h3>
         <div className={styles.grid}>
           <a className={styles.card}>
-            <button onClick = {handleClick}>Like({likes})</button>
+            {/* <button onClick = {handleClick}>Like({likes})</button> */}
             <h2>Vet &rarr;</h2>
             <Image 
               src={vet}
@@ -30,6 +31,7 @@ export default function jobs(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -40,6 +42,7 @@ export default function jobs(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -50,6 +53,7 @@ export default function jobs(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a  className={styles.card}>
@@ -60,6 +64,7 @@ export default function jobs(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
         </div>
         <div className={styles.button}>
