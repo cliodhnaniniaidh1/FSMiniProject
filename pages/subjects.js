@@ -6,6 +6,7 @@ import histroy from '../images/history.png'
 import Link from 'next/link'
 import styles from '../styles/Page.module.css'
 import HeaderComponent from './components/Header';
+import Popup from '../layout/popup/Popup'
 
 export default function subjects(){
   return (
@@ -22,6 +23,7 @@ export default function subjects(){
               width={400}
               height={400}
               />
+            <Popup />
           </a>
 
           <a className={styles.card}>
@@ -32,6 +34,7 @@ export default function subjects(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -42,6 +45,7 @@ export default function subjects(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -52,6 +56,7 @@ export default function subjects(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
         </div>
         <div className={styles.button}>

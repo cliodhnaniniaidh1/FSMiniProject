@@ -6,6 +6,7 @@ import motorbike from '../images/motorbike.png'
 import car from '../images/car.png'
 import tractor from '../images/tractor.png'
 import Link from 'next/link'
+import Popup from '../layout/popup/Popup';
 
 export default function vehicles(){
   return (
@@ -22,6 +23,7 @@ export default function vehicles(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -32,6 +34,7 @@ export default function vehicles(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -42,6 +45,7 @@ export default function vehicles(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
 
           <a className={styles.card}>
@@ -52,6 +56,7 @@ export default function vehicles(){
               width={400}
               height={400}
               />
+              <Popup />
           </a>
         </div>
         <div className={styles.button}>
