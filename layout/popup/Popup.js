@@ -14,8 +14,8 @@ function close() {
   }
 }
     return (
-      <div className={styles.button}>
-        <p onClick={() => close(true)}>Click Here!</p>
+      <div className={styles.button} onClick={() => close(true)}>
+        <p>Click Here!</p>
         {show && (
           <div className={styles.mainDiv} >
             <div className={styles.greyBackground}></div>
