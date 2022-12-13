@@ -23,7 +23,9 @@ export default function vehicles(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Lorry"
+               />
           </a>
 
           <a className={styles.card}>
@@ -34,7 +36,9 @@ export default function vehicles(){
               width={400}
               height={400}
               />
-              <Popup />
+             <Popup
+               description = "This is a Motorbike"
+               />
           </a>
 
           <a className={styles.card}>
@@ -45,7 +49,9 @@ export default function vehicles(){
               width={400}
               height={400}
               />
-              <Popup />
+             <Popup
+               description = "This is a Tractor"
+               />
           </a>
 
           <a className={styles.card}>
@@ -56,7 +62,9 @@ export default function vehicles(){
               width={400}
               height={400}
               />
-              <Popup />
+             <Popup
+               description = "This is a Car"
+               />
           </a>
         </div>
         <div className={styles.button}>

@@ -27,6 +27,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .title {
@@ -50,8 +51,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
@@ -61,7 +63,8 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  min-width: 200px;
+
 }
 
 .card:hover,

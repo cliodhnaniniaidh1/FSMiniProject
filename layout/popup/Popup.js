@@ -21,6 +21,7 @@ function close() {
             <div className={styles.greyBackground}></div>
             <div className={styles.thePopup}>
               <div className={styles.button} onClick={() => close(false)}>Close</div>
+              <div className={styles.description}>{props.description}</div>
             </div>
           </div>
         )}

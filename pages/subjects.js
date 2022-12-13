@@ -23,7 +23,9 @@ export default function subjects(){
               width={400}
               height={400}
               />
-            <Popup />
+            <Popup
+               description = "This is Maths"
+               />
           </a>
 
           <a className={styles.card}>
@@ -34,7 +36,9 @@ export default function subjects(){
               width={400}
               height={400}
               />
-              <Popup />
+             <Popup
+               description = "This is English"
+               />
           </a>
 
           <a className={styles.card}>
@@ -45,7 +49,9 @@ export default function subjects(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is Science"
+               />
           </a>
 
           <a className={styles.card}>
@@ -56,7 +62,9 @@ export default function subjects(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is History"
+               />
           </a>
         </div>
         <div className={styles.button}>

@@ -37,14 +37,14 @@ export default function Home() {
           </a>
 
           <a className={styles.card}>
-            <Link href='/subjects'>
+            <Link href='/jobs'>
               <h2>Jobs &rarr;</h2>
               <p>Learn about different jobs!</p>
             </Link>
           </a>
 
           <a className={styles.card}>
-            <Link href='/subjects'>
+            <Link href='/vehicles'>
               <h2>Vehicles &rarr;</h2>
               <p>Compare different Vehicles!</p>
             </Link>

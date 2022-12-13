@@ -25,7 +25,9 @@ function animals(){
               width={400}
               height={400}
               />
-               <Popup />
+               <Popup
+               description = "This is a Flamingo"
+               />
           </a>
 
           <a className={styles.card}>
@@ -36,7 +38,9 @@ function animals(){
               width={400}
               height={400}
               />
-               <Popup />
+               <Popup
+               description = "This is a Koala"
+               />
           </a>
 
           <a className={styles.card}>
@@ -47,7 +51,9 @@ function animals(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Panda"
+               />
           </a>
 
           <a className={styles.card}>
@@ -58,7 +64,9 @@ function animals(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Tiger"
+               />
           </a>
         </div>
         <div className={styles.button}>

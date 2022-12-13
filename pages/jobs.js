@@ -31,7 +31,9 @@ export default function jobs(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Vet"
+               />
           </a>
 
           <a className={styles.card}>
@@ -42,7 +44,9 @@ export default function jobs(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Nurse"
+               />
           </a>
 
           <a className={styles.card}>
@@ -53,7 +57,9 @@ export default function jobs(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Teacher"
+               />
           </a>
 
           <a  className={styles.card}>
@@ -64,7 +70,9 @@ export default function jobs(){
               width={400}
               height={400}
               />
-              <Popup />
+              <Popup
+               description = "This is a Guard"
+               />
           </a>
         </div>
         <div className={styles.button}>
