@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: space-around;
   font-size: 25px;
+  border-radius: 0 0 85% 85% / 90%;
 }
 
 .main {
@@ -80,4 +81,3 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
